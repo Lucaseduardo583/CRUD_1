@@ -39,9 +39,24 @@
 </header>
 
 <body>
+
+  <div class="card mb-">
+    <div class="video-scCortes">
+      <!-- Video Responsivo -->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"
+          src="https://www.youtube.com/embed/24T8TpGEKBo?autoplay=1&loop=1&playlist=24T8TpGEKBo&controls=0&mute=1&rel=0&showinfo=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
   <div class="card mb-3">
     <div class="card-body">
-      <h5 class="card-title" onclick="toggleContent(0)">Sobre nós</h5>
+      <h5 id="sobreNos" class="card-title" onclick="toggleContent(0)">Sobre nós</h5>
       <div class="content-body" id="content-0">
         <p>Bem-vindo à SC Cortes! Somos uma barbearia moderna, onde cada cliente é tratado de forma única.</p>
       </div>
@@ -75,7 +90,7 @@
     </div>
   </div>
 
-  <br><br>
+  <br><br><br><br>
 
   <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -139,6 +154,7 @@
 
       <!-- Sobre os barbeiros -->
       <div class="col-md-4 mb-4">
+        <h4>Sobre nós</h4>
         <p><a href="#">Samequê Costa</a></p>
       </div>
     </div>
@@ -161,10 +177,6 @@
       </div>
     </div>
   </section>
-  <section id="sobreNos" class="p-3 mb-2 text-white">
-    
-  </section>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
